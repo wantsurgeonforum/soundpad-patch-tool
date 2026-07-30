@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="55%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#1c2128"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#3fb950" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#3fb950" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="360" fill="url(#glow)"/>
+
+  <g opacity="0.35">
+    <circle cx="150" cy="70" r="90" fill="none" stroke="#3fb950" stroke-width="1"/>
+    <circle cx="1060" cy="300" r="120" fill="none" stroke="#58a6ff" stroke-width="1"/>
+    <circle cx="1000" cy="60" r="40" fill="none" stroke="#c9d1d9" stroke-width="1"/>
+  </g>
+
+  <g opacity="0.55" stroke="#3fb950" stroke-width="2" fill="none">
+    <line x1="90" y1="55" x2="90" y2="35"/>
+    <line x1="105" y1="60" x2="105" y2="20"/>
+    <line x1="120" y1="55" x2="120" y2="40"/>
+    <line x1="135" y1="58" x2="135" y2="30"/>
+    <line x1="150" y1="55" x2="150" y2="42"/>
+  </g>
+
+  <g opacity="0.5" stroke="#58a6ff" stroke-width="2" fill="none">
+    <line x1="1050" y1="330" x2="1050" y2="305"/>
+    <line x1="1065" y1="335" x2="1065" y2="290"/>
+    <line x1="1080" y1="330" x2="1080" y2="310"/>
+    <line x1="1095" y1="333" x2="1095" y2="300"/>
+    <line x1="1110" y1="330" x2="1110" y2="315"/>
+  </g>
+
+  <path d="M60,320 C 250,290 400,340 600,320 S 950,300 1140,325" fill="none" stroke="url(#wave)" stroke-width="3" opacity="0.6"/>
+  <path d="M60,50 C 250,80 400,30 600,55 S 950,75 1140,45" fill="none" stroke="url(#wave)" stroke-width="3" opacity="0.5"/>
+
+  <text x="600" y="168" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="62.0" fill="#ffffff" font-weight="bold">
+    <tspan>Soundpad Patcher</tspan>
+  </text>
+
+  <text x="600" y="222" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21.0" fill="#c9d1d9">
+    <tspan x="600" dy="0">Soundpad patcher for stream editors stuck rebuilding sound sets —</tspan>
+    <tspan x="600" dy="30">pipeline, hot reload, preview, one .exe.</tspan>
+  </text>
+</svg>
